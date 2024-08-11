@@ -425,6 +425,8 @@ img {
   justify-content: center;
 }
 .iten-icon {
+  width: 64;
+  height: 64;
 }
 .socials {
   display: flex;
