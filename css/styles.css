@@ -167,6 +167,9 @@ img {
     ),
     url(../images/people-office.jpg);
   background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section-box {
   width: calc((100% - 72px) / 4);
@@ -197,6 +200,7 @@ img {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-button-text {
   font-weight: 500;
@@ -261,6 +265,8 @@ img {
   color: #2e2f42;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-personal {
   font-weight: 500;
@@ -430,6 +436,7 @@ img {
 .socials-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
   width: 100%;
@@ -442,7 +449,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0.2, 1);
 }
 .link:hover,
-link:focus {
+.link:focus {
   background-color: #404bbf;
 }
 .icon {
